@@ -1,5 +1,6 @@
-title: Hacker theme
-description: Hacker is a theme for GitHub Pages.
-show_downloads: true
-google_analytics:
-theme: jekyll-theme-hacker
+remote_theme: pages-themes/slate@v0.2.0 
+ plugins: 
+ - jekyll-remote-theme # add this line to the plugins list if you already have one 
+   title: [Roller Coasters] 
+ description: [by Yuxuan Wen and Huixin Deng] 
+ show_downloads: ["true"] 
