@@ -1,4 +1,4 @@
-import numpy as np
-import matplotlib as plt
-import pandas as pd
-import streamlit    
+numpy
+pandas
+matplotlib
+streamlit
