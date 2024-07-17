@@ -6,8 +6,8 @@ import numpy as np
 
 
 st.title('Roller Coasters Around the World')
-file_path1 = "D:\\MISY225\\repos\\the-final-project\\roller_coasters.csv"
-file_path2 = "D:\\MISY225\\repos\\the-final-project\\Golden_Tickert_Award_Winners_Steel.csv"
+file_path1 = "the-final-project\\roller_coasters.csv"
+file_path2 = "the-final-project\\Golden_Tickert_Award_Winners_Steel.csv"
 
 df1 = pd.read_csv(file_path1)
 df2 = pd.read_csv(file_path2)
@@ -46,15 +46,15 @@ st.write('Steel roller coasters are made for longer spans, more unique and more 
 st.subheader('Part 3: Linear Regression Analysis')
 st.write('We use Excel to find the correlation of speed and height')
 from PIL import Image
-image = Image.open('D:\\MISY225\\repos\\the-final-project\\regression1.jpg')
+image = Image.open('the-final-project\\regression1.jpg')
 st.image(image, caption='Sunrise by the mountains')
 st.write('Since the P value is small, the model is doable')
 
-image = Image.open('D:\\MISY225\\repos\\the-final-project\\regression2.jpg')
+image = Image.open('the-final-project\\regression2.jpg')
 st.image(image, caption='Sunrise by the mountains')
 st.write('y = height, x = speed')
 st.write('We delete two extreme values(height = 902)')
-image = Image.open('D:\\MISY225\\repos\\the-final-project\\regression3.jpg')
+image = Image.open('the-final-project\\regression3.jpg')
 st.image(image, caption='Sunrise by the mountains')
 st.write('When we select the data of high ranking roller coasters, we find the regression is dramatic.')
 
