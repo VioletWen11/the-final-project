@@ -6,12 +6,15 @@ import numpy as np
 
 
 st.title('Roller Coasters Around the World')
-file_path1 = "the-final-project\\roller_coasters.csv"
-file_path2 = "the-final-project\\Golden_Tickert_Award_Winners_Steel.csv"
+file_path1 = os.path.join(current_dir, 'roller_coasters.csv')
+file_path2 = os.path.join(current_dir, 'Golden_Tickert_Award_Winners_Steel.csv')
 
 df1 = pd.read_csv(file_path1)
+st.write(df1)
 df2 = pd.read_csv(file_path2)
+st.write(df2)
 df3 = pd.read_csv(file_path2)
+st.write(df3)
 
 st.write('Notice: This app is built to analyse four parts of roller coasters around the world.')
 
