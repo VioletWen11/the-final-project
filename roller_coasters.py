@@ -2,10 +2,13 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-
+import os
 
 
 st.title('Roller Coasters Around the World')
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
 file_path1 = os.path.join(current_dir, 'roller_coasters.csv')
 file_path2 = os.path.join(current_dir, 'Golden_Tickert_Award_Winners_Steel.csv')
 
@@ -49,15 +52,19 @@ st.write('Steel roller coasters are made for longer spans, more unique and more 
 st.subheader('Part 3: Linear Regression Analysis')
 st.write('We use Excel to find the correlation of speed and height')
 from PIL import Image
-image = Image.open('the-final-project\\regression1.jpg')
+image_path1 = os.path.join(current_dir, 'the-final-project', 'regression1.jpg')
+image = Image.open(image_path1)
 st.image(image, caption='Sunrise by the mountains')
 st.write('Since the P value is small, the model is doable')
 
-image = Image.open('the-final-project\\regression2.jpg')
+image_path2 = os.path.join(current_dir, 'the-final-project', 'regression2.jpg')
+image = Image.open(image_path2)
 st.image(image, caption='Sunrise by the mountains')
 st.write('y = height, x = speed')
 st.write('We delete two extreme values(height = 902)')
-image = Image.open('the-final-project\\regression3.jpg')
+
+image_path3 = os.path.join(current_dir, 'the-final-project', 'regression3.jpg')
+image = Image.open(image_path3)
 st.image(image, caption='Sunrise by the mountains')
 st.write('When we select the data of high ranking roller coasters, we find the regression is dramatic.')
 
